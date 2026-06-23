@@ -5,10 +5,42 @@ body {
 }
 
 header{
-    background-color: #f7efef;
-}
-
-.menu-toggle{
-    display:none;
+    background-color: #e4e1e1;
+    display: flex;
+    justify-content: space-between;
+    
     
 }
+
+.sr-only{
+    display: none;
+}
+.menu{
+    margin: 3px;
+    padding: 3px; 
+}
+.menu-toggle{
+    display: none;
+
+}
+.menu-list{
+list-style: none;
+display: flex;
+gap: 10px;
+
+
+}
+
+.menu-list li a{
+    text-decoration: none;
+    
+}
+
+
+@media(max-width: 768px){
+ .menu-list{
+    display: none;
+    
+    }
+}
+
