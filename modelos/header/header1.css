@@ -71,14 +71,7 @@ header svg{
         padding: 20px;
         box-sizing: border-box;
     }
-    .menu.open  .line-1{
-        transform:translateY(6px) rotate(45deg);
-    }
-    .menu.open .line-2{
-        opacity: 0;
-    }
-    .menu-open .line-3 {
-    transform: translateY(-6px) rotate(-45deg);
-    }
+    
+    
 }
 
