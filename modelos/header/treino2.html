@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Seu Carrinho</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f4f9; padding: 40px 20px; }
+        
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        h2 { margin-bottom: 20px; color: #333; }
+        
+        /* Onde o seu JS vai injetar a lista de produtos escolhidos */
+        .lista-itens { list-style: none; margin-bottom: 20px; border-bottom: 20px; }
+        .item-carrinho { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
+        
+        .total-container { display: flex; justify-content: space-between; font-size: 1.3rem; font-weight: bold; margin: 20px 0; color: #2d3748; }
+        
+        .btn-finalizar { background-color: #2ed573; color: white; border: none; padding: 15px; width: 100%; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+        .btn-finalizar:hover { background-color: #26af5f; }
+        .btn-voltar { display: block; text-align: center; margin-top: 15px; color: #718096; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Resumo do Pedido</h2>
+        
+        <ul class="lista-itens" id="listaItens">
+            </ul>
+
+        <div class="total-container">
+            <span>Total:</span>
+            <span id="valorTotal">R$ 0,00</span>
+        </div>
+
+        <button class="btn-finalizar" id="btnFinalizar">Finalizar Pedido</button>
+        <a href="index.html" class="btn-voltar">Voltar para a loja</a>
+    </div>
+
+    <script>
+        // O JS do Carrinho também é seu!
+        // Dica: Use 'localStorage.getItem()' para recuperar os produtos que salvou na página anterior,
+        // faça um loop para criar os elementos na tela e calcule o valor total.
+    </script>
+</body>
+</html>
